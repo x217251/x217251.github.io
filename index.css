@@ -1,95 +1,141 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="img">
-    <title>世界诗歌解读网</title>
-</head>
-<style>
-	.nav>li:first-child{
-			   background-color: #779649;
-			   corlor:#fff;
-		   }
-		   .nav>li:hover{
-			   background-color: #779649;
-			   corlor:#fff;
-		   }
-</style>
-	<link rel="icon" href="img/icon.jpg">
-<body>
-	<div class="header">
-		<ul class="container nav">
-			<li><a href="index.html">首页推荐</a></li>
-			<li><a href="domestic.html">国内专区</a></li>
-			<li><a href="foreign.html">国外专区</a></li>
-			<li>个人账号</li>
-			<li>用户反馈</li>
-		</ul>
-	</div>
+ul{
+    list-style:none;
+    padding: 0;
+    margin:0;
+}
+/* 让字前面没有黑点 */
+a{
+    text-decoration:none;
+}
+/* 让字下面没有下划线 */
 
-	<div class="banner">
-		<div class="container">
-			
-			<img src="img/1.jpg">
-			
-		</div>
-	</div>
-	<div class="item1">
-		<div class="container">
-		<h3 class="title">每日好诗</h3>
-		
-		<div class="box">
-			<img src="img/2.jpg">
-			<div class="text">
-<p>北风卷地白草折，胡天八月即飞雪。</p>
-<p>忽如一夜春风来，千树万树梨花开。</p>
-<p>散入珠帘湿罗幕，狐裘不暖锦衾薄。</p>
-<p>将军角弓不得控，都护铁衣冷难着。</p>
-<p>瀚海阑干百丈冰，愁云惨淡万里凝。</p>
-<p>中军置酒饮归客，胡琴琵琶与羌笛。</p>
-<p>纷纷暮雪下辕门，风掣红旗冻不翻。</p>
-<p>轮台东门送君去，去时雪满天山路。</p>
-<p>山回路转不见君，雪上空留马行处。</p>
+.header{
+    width:100%;
+    height:80px;
+    font-size:20px;
+    /* //border:2px solid red; */
+}
 
-<button onclick="viewPoemDetails()">查看更多</button>
-<script>
-    function viewPoemDetails() {
-      // 在这里添加代码以跳转到诗歌详情页面
-       window.location.href = "poemtrydetails.html"; 
-    }
-  </script>
-			</div>
-		</div>
 
-		<div class="box2">
-			<img src="https://ts1.cn.mm.bing.net/th/id/R-C.1bc73829e367a7c191571007e0f879a0?rik=lQ2nV1eHWAe1JA&riu=http%3a%2f%2fwww.quangushi.com%2fuploads%2fallimg%2f150926%2f1-150926163H3S6.jpg&ehk=M6A4ioCyZKMNzzztYap0xWcAIBpOsNOmgV3uu7ONZs4%3d&risl=&pid=ImgRaw&r=0">
-			
-		        
-			<div class="text">
-<p>静夜思（李白）</p>
-<p>床前明月光，</p>
-<p>疑是地上霜。</p>
-<p>举头望明月，</p>
-<p>低头思故乡。</p>
-<button onclick="viewPoemDetails()">查看更多</button>
-<script>
-    function viewPoemDetails() {
-      // 在这里添加代码以跳转到诗歌详情页面
-       window.location.href = "poemtrydetails.html"; 
-    }
-  </script>
-			</div>
-			
-		
-	</div>
-	<a href="https://fanyi.baidu.com/">单词翻译</a>
-	<a href="http://127.0.0.1:8848/try1/index.html">买买买吗</a>
+.container{
+    width:1000px;
+    height:100%;
+    
+    margin:auto;
+    /* //border:2px solid red; */
+}
+/* 盒子界限分区 */
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+/* 让导航栏标题横向排列 */
+
+.nav>li{
+    
+    height:80px;
+    line-height:80px;
+    padding:0 15px;
+    
+}
+/* 导航栏文字居中 */
+
+
+			.banner{
+				width:100%;
+				height:250px;
+				
+			}
+			.banner img{
+				width:100%;
+				height:100%
+			}
+			.item1{
+				width:100%
+				/* //border:2px solid #000; */
+				margin-top 30px;
+			}
 	
+			
+			.title{
+				font-size:30px;
+				font-weight:500;
+				color:#856782;
+				margin-bottom:30px;
+			}
+			.item1 .box{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				
+			}
+			.item1 .box>img{
+				display: block;
+				width:40%;
+			}
+			.item1 .box>.text{
+				/* //background-color: #779649; */
+				font-size:18px;
+				width:45%;
+			}
+						.item3{
+				width:100%
+				/* //border:2px solid #000; */
+				margin-top 30px;
+			}
+			.item3 .bookshelf{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			.item3 .bookshelf>leftbook{
+				display: block;
+				width:40%;
+			}
+			.item3 .bookshelf>rightbook{
+				display: block;
+				width:40%;
+			}
+			.item1 .box2{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				
+			}
+			.item1 .box2>img{
+				display: block;
+				width:40%;
+			}
+			.item1 .box2>.text{
+				/* //background-color: #779649; */
+				font-size:18px;
+				width:45%;
+		    }
+
+			
+
+			/* .button { 
+				display: inline-block;
+				padding: 10px 20px;
+				font-size: 16px;
+				color: white;
+				background-color: red;
+				border-radius: 50%; /* 使按钮成为圆形 
+				text-align: center;
+				cursor: pointer;
+				box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* 可选，增加阴影效果 
+				text-decoration: none; /* 去除下划线 
+			  }
+			  
+			  .button:hover {
+				background-color: #ff6666; /* 鼠标悬停时的背景颜色变化 
+			  }*/
 
 
 
 
-</body>
-</html>
+
+			  

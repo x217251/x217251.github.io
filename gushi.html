@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>唐诗三百首精选 - 酒红色背景</title>
+<title>国内专区-古诗</title>
 <li><a href="domestic.html">&nbsp;返回</a></li>
 <style>
     h1{
@@ -16,6 +16,13 @@
     font-family: '宋体', sans-serif;
     background-color: #f3e6ce; /* 酒红色背景 */
     color: white;
+  }
+  a {
+    color: white; /* 文字颜色设置为白色 */
+    text-decoration: none; /* 去掉下划线 */
+  }
+  a:hover {
+    text-decoration: underline; /* 鼠标悬停时显示下划线 */
   }
   .container {
     display: flex;
@@ -48,18 +55,25 @@
 <h1>&nbsp;&nbsp;&nbsp;古诗</h1>
 <div class="container">
   <!-- 每行四个小容器，每个都是唐诗三百首的一首诗 -->
+  <a href="poemtrydetails.html" class="block-container">
+    <h2 class="poem-title">静夜思</h2>
+    <p class="poem-author">李白</p >
+    <p class="poem-content">床前明月光，疑是地上霜。</p >
+    <p class="poem-content">举头望明月，低头思故乡。</p >
+  </a >
+
   <div class="block-container">
     <h2 class="poem-title">登鹳雀楼</h2>
     <p class="poem-author">王之涣</p >
     <p class="poem-content">白日依山尽，黄河入海流。</p >
     <p class="poem-content">欲穷千里目，更上一层楼。</p >
   </div>
-  <div class="block-container">
+  <!-- <div class="block-container">
     <h2 class="poem-title">静夜思</h2>
     <p class="poem-author">李白</p >
     <p class="poem-content">床前明月光，疑是地上霜。</p >
     <p class="poem-content">举头望明月，低头思故乡。</p >
-  </div>
+  </div> -->
   <div class="block-container">
     <h2 class="poem-title">春晓</h2>
     <p class="poem-author">孟浩然</p >

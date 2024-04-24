@@ -9,11 +9,12 @@ a{
 }
 /* 让字下面没有下划线 */
 
+
 .header{
     width:100%;
     height:80px;
     font-size:20px;
-    /* //border:2px solid red; */
+    /* border:2px solid red; */
 }
 
 
@@ -22,7 +23,7 @@ a{
     height:100%;
     
     margin:auto;
-    /* //border:2px solid red; */
+    /* border:2px solid red; */
 }
 /* 盒子界限分区 */
 
@@ -47,11 +48,22 @@ a{
 			.banner{
 				width:100%;
 				height:250px;
-				
+			
 			}
 			.banner img{
 				width:100%;
 				height:100%
+				
+			}
+			.banana{
+				width:100%;
+				height:50px;
+			
+			}
+			.banana img{
+				width:95%;
+				height:100%
+				
 			}
 			.item1{
 				width:100%
@@ -74,14 +86,14 @@ a{
 			}
 			.item1 .box>img{
 				display: block;
-				width:40%;
+				width:45%;
 			}
 			.item1 .box>.text{
 				/* //background-color: #779649; */
 				font-size:18px;
 				width:45%;
 			}
-						.item3{
+			.item3{
 				width:100%
 				/* //border:2px solid #000; */
 				margin-top 30px;
@@ -103,11 +115,10 @@ a{
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
-				
 			}
 			.item1 .box2>img{
 				display: block;
-				width:40%;
+				width:45%;
 			}
 			.item1 .box2>.text{
 				/* //background-color: #779649; */

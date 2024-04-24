@@ -8,6 +8,7 @@
     <title>世界诗歌解读网</title>
 </head>
 <style>
+    
     .nav>li:nth-child(3){
                background-color: #779649;
                corlor:#fff;
@@ -16,6 +17,85 @@
                background-color: #779649;
                corlor:#fff;
            }
+   
+
+    .frames-container{
+              width: 100%;
+			  display: flex;
+              margin: auto;
+			  flex-wrap: wrap;
+              justify-content: center;
+			  align-items: flex-start;
+        
+        /*  justify-content:center;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+ */
+ .kuang {
+        width: 220px;
+
+        height: 330px;
+        /* border: 2px solid blue; */
+        overflow: hidden;
+        position: relative;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        margin: 10px;
+        
+        /* 每个盒子之间的间隔 */
+    }
+    }
+  .frame {
+   width: 140px;
+    height: 175px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    margin: 20px;
+    background-color: #fff;
+    position: relative;
+  }
+
+  .frame img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    position: relative;
+    
+  }
+
+  .european-decoration {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    border: 2px solid gold;
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  .sticker {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 100px;
+        /* 方形贴纸宽度 */
+        height: 40px;
+        /* 方形贴纸高度 */
+        background-color: #779649;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sticker p {
+      margin: 0;
+      font-size: 14px;
+      color: blue;
+    }
+
 </style>
 <body>
     <div class="header">
@@ -27,24 +107,65 @@
 			<li>用户反馈</li>
 		</ul>
 	</div>
-	<div class="banner">
-        <style>
-            .content{
-                background-image: url('./img/foreign.jpg');
-                background-repeat: no-repeat;
-                background-position: center;
-                padding: 0 100px;
-            }
-        </style>
-		<div class="content">
+
+		<!-- <div class="content">
 			
 			<img src="img/foreign.jpg">
 			
-		</div>
-	</div>
-    
+		</div> -->
+     
+        <div class="item1">
+        <div class="container">
+        <div class="banner">
+            <div class="container">
+                
+                <img src="img/foreign.jpg">
+            </div>	
+        </div>   <br><h1>&nbsp&nbsp诗坛巨匠</h1>
+        <div class="banana">
+            <div class="container">
+                <img src="img/frame.jpg">
 
-  
+        </div></div>
+        <div class="frames-container">
+            <div class="kuang">
+            <div class="frame">
+                <div class="european-decoration"></div>
+                <a href="ssby.html" target="_blank">
+                    <img src="https://ts1.cn.mm.bing.net/th?id=OIP-C.bv0svIWnPbbl1S-ncuCovwHaJf&w=220&h=282&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2">
+				 
+               
+               </a ></div>
+            <div class="sticker">
+                <p>威廉·莎士比亚</p>
+            </div></div>
+              <div class="kuang">
+                <div class="frame">
+                    <div class="european-decoration"></div>
+                    <img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.gqawOcRI9MInPhiJRNcAkwHaJG?w=145&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7">
+                  </div>
+                  <div class="sticker">
+                    <p>歌德</p>
+                </div></div>
+                  <div class="kuang">
+                    <div class="frame">
+                        <div class="european-decoration"></div>
+                        <img src="https://tse2-mm.cn.bing.net/th/id/OIP-C.ROpG2kqUsp9xW0XMCbsb_QHaIl?w=139&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7">
+                      </div>
+                      <div class="sticker">
+                        <p>普希金</p>
+                    </div></div>
+                      <div class="kuang">
+                        <div class="frame">
+                            <div class="european-decoration"></div>
+                            <img src="https://tse1-mm.cn.bing.net/th/id/OIP-C.Z02LEKE8nVxCBVwnG5Op5QAAAA?w=147&h=189&c=7&r=0&o=5&dpr=1.5&pid=1.7">
+                          </div>
+                          <div class="sticker">
+                            <p>但丁</p>
+                        </div></div>
+            </div>
+        </div>
+</div>
  
 
 </body>
